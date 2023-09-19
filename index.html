@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Welcome to my Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="portfolio">
+            <img src="picture2.png" alt="my-image" width="60" height="60">
+            <h1 class="name">Godwin Aikhomun</h1>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html" target="contentFrame" id="about-link" class="active"><ion-icon name="home"></ion-icon></a></li>
+                <li><a href="experience.html" target="contentFrame" id="experience-link">TYÖKOKEMUS </a></li>
+                <li><a href="skills.html" target="contentFrame" id="skills-link">OSAAMINEN</a></li>
+                <li><a href="edu.html" target="contentFrame" id="education-link">KOULUTUSHISTORIA</a></li>
+                <li><a href="recommendations.html" target="contentFrame" id="recommendation-link">SUOSITUKSIA</a></li>
+                <li><a href="hubby.html" target="contentFrame">HARRASTUKSET</a></li>
+                <li><a href="contact.html" target="contentFrame" id="contact-link">YHTEYSTIEDOT</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Wrap the iframe in a container with the ID iframe-container -->
+        <div id="iframe-container">
+            <iframe src="about.html" frameborder="0" id="contentFrame" name="contentFrame" title="About Me"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/godsonplumbingworks" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.facebook.com/godsonplumbingworks" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://twitter.com/godsonplumbing" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+        <p id="footer-text">Copyright &copy; <span id="copyright-year">2023</span> by Godwin Aikhomun | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
