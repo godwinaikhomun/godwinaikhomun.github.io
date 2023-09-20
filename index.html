@@ -10,7 +10,6 @@
         <div class="portfolio">
             <img src="picture2.png" alt="my-image" width="60" height="60">
             <h1 class="name">Godwin Aikhomun</h1>
-            
         </div>
         <nav>
             <ul>
@@ -21,7 +20,6 @@
                 <li><a href="recommendations.html" target="contentFrame" id="recommendation-link">SUOSITUKSIA</a></li>
                 <li><a href="hubby.html" target="contentFrame">HARRASTUKSET</a></li>
                 <li><a href="contact.html" target="contentFrame" id="contact-link">YHTEYSTIEDOT</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -35,7 +33,7 @@
 
     <footer>
         <ion-icon name="mail-unread" id="mail-icon"></ion-icon>
-        <a href="https://wa.me/2348038830817" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <ion-icon name="logo-whatsapp" id="whatsapp-icon"></ion-icon>
         <ion-icon name="call" id="call-icon"></ion-icon>
         <a href="https://www.linkedin.com/in/godsonplumbingworks" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a href="https://www.facebook.com/godsonplumbingworks" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -45,5 +43,19 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const mailIcon = document.getElementById("mail-icon");
+        const callIcon = document.getElementById("call-icon");
+
+        mailIcon.addEventListener("click", () => {
+            // Open a new email to godwinaikhomun@kao.fi
+            window.location.href = "mailto:godwinaikhomun@kao.fi";
+        });
+
+        callIcon.addEventListener("click", () => {
+            // Initiate a call to +358406641621
+            window.location.href = "tel:+358406641621";
+        });
+    </script>
 </body>
 </html>
