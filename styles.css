@@ -59,7 +59,7 @@ nav ul li a {
  }
 
 /* Add a new style for making bold text blue for experience text */
-.ul li p span[style="font-weight: bold"] {
+ul li p span[style="font-weight: bold"] {
     color: #0074e4;
 }
 
@@ -219,7 +219,7 @@ ion-icon {
     .contact-info {
         margin-left: 30px; /* Add space between icon and contact info on smaller screens */
     }
-}
+
 
 /* Education heading styles */
 #education-heading {
