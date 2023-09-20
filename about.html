@@ -9,6 +9,12 @@
 <body>
         <section>
         <div>
+          <ion-icon name="mail-unread" id="mail-icon"></ion-icon>
+                    <a href="https://wa.me/2348038830817" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <ion-icon name="call" id="call-icon"></ion-icon>
+                    <a href="https://www.linkedin.com/in/godsonplumbingworks" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.facebook.com/godsonplumbingworks" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://twitter.com/godsonplumbing" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
             <p>
             Olen Kainuun ammattiopiston toinen vuoden opiskelija, tieto- ja viestintätekniikan perustutkinto. Tekniikan ala kiinnostaa minua ja saisin varmasti hyvää työkokemusta teidän yrityksessänne. Olen valmis tekemään minkä tahansa tehtävän ja oppimaan tarkkailemalla. <br><br>
             </p>
@@ -24,6 +30,21 @@
               <a href="Godwin_Aikhomun_CV.pdf" class="btn">LATAA CV:ni</a>
         </div>
     </section>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const mailIcon = document.getElementById("mail-icon");
+        const callIcon = document.getElementById("call-icon");
+
+        mailIcon.addEventListener("click", () => {
+            // Open a new email to godwinaikhomun@kao.fi
+            window.location.href = "mailto:godwinaikhomun@kao.fi";
+        });
+
+        callIcon.addEventListener("click", () => {
+            // Initiate a call to +358406641621
+            window.location.href = "tel:+358406641621";
+        });
+    </script>
 </body>
 </html>
