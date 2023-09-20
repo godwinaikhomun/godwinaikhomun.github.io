@@ -75,7 +75,7 @@ main {
 
 iframe {
     width: 100%;
-    height: 900px;
+    height: 870px;
     border: none;
 }
 
@@ -84,7 +84,7 @@ footer {
     background-color: lightblue;
     color: #0074e4;
     text-align: center;
-    padding: 5px 0;
+    padding: 0px 0;
 }
 
 #footer-text {
