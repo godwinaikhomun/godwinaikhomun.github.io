@@ -142,7 +142,7 @@ h2 {
 
 p {
     font-size: 2rem;
-    font-weight: bold
+    
 }
 
 /* Main styles for the page content */
@@ -170,6 +170,7 @@ p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 10px;
+    font-weight: bold
 }
 
 
