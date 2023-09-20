@@ -89,39 +89,6 @@ footer {
     font-weight: bold;
 }
 
-/* Responsive design */
-
-/* Media query for screens with a maximum width of 768px (typical tablets) */
-@media (max-width: 768px) {
-    body {
-        font-size: 0.875rem;
-    }
-
-    .container {
-        padding: 20px;
-    }
-}
-
-/* Media query for screens with a maximum width of 480px (typical smartphones) */
-@media (max-width: 480px) {
-    body {
-        font-size: 0.75rem;
-    }
-
-    .container {
-        padding: 5px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-        /* Add styling for the mobile menu here */
-    }
-}
-
 /* Additional responsive styles */
 
 .portfolio {
@@ -235,12 +202,6 @@ ion-icon {
     line-height: 1.5;
     margin-bottom: 5px;
 }
-
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
 
     .contact-details {
         flex-direction: column; /* Stack contact info vertically on smaller screens */
