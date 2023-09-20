@@ -59,7 +59,7 @@ nav ul li a {
  }
 
 /* Add a new style for making bold text blue for experience text */
-ul li p span[style="font-weight: bold"] {
+.ul li p span[style="font-weight: bold"] {
     color: #0074e4;
 }
 
