@@ -58,6 +58,11 @@ nav ul li a {
     font-weight: bold
  }
 
+/* Add a new style for making bold text blue for experience text */
+li span[style="font-weight: bold"] {
+    color: #0074e4;
+}
+
 nav ul li a:hover,
 nav ul li a:active {
      color: yellow;
@@ -244,7 +249,3 @@ span[id^="education-title"] {
     margin-left: 10px;
 }
 
-/* Add a new style for making bold text blue for experience text */
-li span[style="font-weight: bold"] {
-    color: #0074e4;
-}
