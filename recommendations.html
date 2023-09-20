@@ -8,6 +8,8 @@
 <body>
     <main>
         <h2 id="recommendation-heading">SUOSITUKSIA :</h2><br><br>
+
+        <!-- Contact 1 -->
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
             <div class="contact-details">
@@ -16,9 +18,13 @@
                     <p>Kainuun Ammattiopisto (Kao)</p>
                     <p>juha.kananen@kao.fi</p>
                     <p>+358 44 286 3814</p>
+                    <ion-icon name="mail-unread" id="mail-icon-1"></ion-icon>
+                    <ion-icon name="call" id="call-icon-1"></ion-icon>
                 </div>
             </div>
         </div>
+
+        <!-- Contact 2 -->
         <br><br>
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
@@ -28,9 +34,13 @@
                     <p>Kierrätyskeskus Entrinki</p>
                     <p>ari.nousiainen@entrinki.fi</p>
                     <p>+358 40 840 7424</p>
+                    <ion-icon name="mail-unread" id="mail-icon-2"></ion-icon>
+                    <ion-icon name="call" id="call-icon-2"></ion-icon>
                 </div>
             </div>
         </div>
+
+        <!-- Contact 3 -->
         <br><br>
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
@@ -40,9 +50,13 @@
                     <p>Sparri Hake</p>
                     <p>arja.tervonen@kajaaninhaka.fi</p>
                     <p>+358 44 235 2197</p>
+                    <ion-icon name="mail-unread" id="mail-icon-3"></ion-icon>
+                    <ion-icon name="call" id="call-icon-3"></ion-icon>
                 </div>
             </div>
         </div>
+
+        <!-- Contact 4 -->
         <br><br>
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
@@ -52,9 +66,13 @@
                     <p>Suomen Atk-talkkari Oy</p>
                     <p>riku.hyttinen@atk-talkkari.fi</p>
                     <p>+358 44 354 0760, +358 40 523 4551</p>
+                    <ion-icon name="mail-unread" id="mail-icon-4"></ion-icon>
+                    <ion-icon name="call" id="call-icon-4"></ion-icon>
                 </div>
             </div>
         </div>
+
+        <!-- Contact 5 -->
         <br><br>
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
@@ -64,9 +82,13 @@
                     <p>Metsänhoitoyhdistys Kainuu Ry, LKV</p>
                     <p>marko.koskela@mhy.fi</p>
                     <p>+358 40 750 7301</p>
+                    <ion-icon name="mail-unread" id="mail-icon-5"></ion-icon>
+                    <ion-icon name="call" id="call-icon-5"></ion-icon>
                 </div>
             </div>
         </div>
+
+        <!-- Contact 6 -->
         <br><br>
         <div class="contact-card">
             <ion-icon name="person"></ion-icon>
@@ -76,11 +98,72 @@
                     <p>Spring House Oy</p>
                     <p>veera.vaisanen@springhouse.fi</p>
                     <p>+358 44 491 0955</p>
+                    <ion-icon name="mail-unread" id="mail-icon-6"></ion-icon>
+                    <ion-icon name="call" id="call-icon-6"></ion-icon>
                 </div>
             </div>
         </div>
+
     </main>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Add event listeners to each mail and call icon
+        for (let i = 1; i <= 6; i++) {
+            const mailIcon = document.getElementById(`mail-icon-${i}`);
+            const callIcon = document.getElementById(`call-icon-${i}`);
+
+            mailIcon.addEventListener("click", () => {
+                // Replace the email address with the desired email address for each contact
+                const email = getEmailForContact(i);
+                window.location.href = `mailto:${email}`;
+            });
+
+            callIcon.addEventListener("click", () => {
+                // Replace the phone number with the desired phone number for each contact
+                const phoneNumber = getPhoneNumberForContact(i);
+                window.location.href = `tel:${phoneNumber}`;
+            });
+        }
+
+        // Define functions to get email and phone number for each contact
+        function getEmailForContact(contactNumber) {
+            switch (contactNumber) {
+                case 1:
+                    return "juha.kananen@kao.fi";
+                case 2:
+                    return "ari.nousiainen@entrinki.fi";
+                case 3:
+                    return "arja.tervonen@kajaaninhaka.fi";
+                case 4:
+                    return "riku.hyttinen@atk-talkkari.fi";
+                case 5:
+                    return "marko.koskela@mhy.fi";
+                case 6:
+                    return "veera.vaisanen@springhouse.fi";
+                default:
+                    return "";
+            }
+        }
+
+        function getPhoneNumberForContact(contactNumber) {
+            switch (contactNumber) {
+                case 1:
+                    return "+358 44 286 3814";
+                case 2:
+                    return "+358 40 840 7424";
+                case 3:
+                    return "+358 44 235 2197";
+                case 4:
+                    return "+358 44 354 0760";
+                case 5:
+                    return "+358 40 750 7301";
+                case 6:
+                    return "+358 44 491 0955";
+                default:
+                    return "";
+            }
+        }
+    </script>
 </body>
 </html>
