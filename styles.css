@@ -176,7 +176,7 @@ p {
 
 /* Contact card styles */
 .contact-card {
-    transform: scale(0);
+    transform: scale(1);
     transition: transform 0.5s;
     display: flex;
     align-items: center;
@@ -189,7 +189,7 @@ p {
 
 .contact-card:hover,
 .contact-card:focus {
-    transform: scale(1);
+    transform: scale(1.1);
     transition: transform 0.5s;
 }
 
