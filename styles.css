@@ -58,7 +58,17 @@ nav ul li a {
     font-weight: bold
  }
 
- .nav-card {
+nav ul li a:hover,
+nav ul li a:active {
+     color: yellow;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.nav-card {
     transform: scale(1);
     transition: transform 0.5s;
     display: flex;
@@ -74,21 +84,6 @@ nav ul li a {
 .nav-card:focus {
     transform: scale(1.1);
     transition: transform 0.5s;
-}
-
-/* Add a new style for making bold text blue for experience text */
-ul li p span[style="font-weight: bold"] {
-    color: #0074e4;
-}
-
-nav ul li a:hover,
-nav ul li a:active {
-     color: yellow;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
 }
 
 /* Footer styles */
@@ -116,7 +111,7 @@ footer {
     align-items: center;
     background-color: #fff;
     border-radius: 10rem;
-    padding-right: 0px;
+    padding-right: 0%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
 }
@@ -130,7 +125,7 @@ footer {
 /* moves the image and name */
 .name {
     font-size: 1rem;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
 }
 
 .portfolio img {
@@ -225,6 +220,36 @@ p {
     transition: transform 0.5s;
 }
 
+
+
+/* Icon styles */
+ion-icon {
+    font-size: 36px;
+    margin-right: 20px;
+    color: #0074e4; /* Icon color */
+}
+
+/* Contact details styles */
+.contact-details {
+    flex: 1;
+}
+
+
+/* Contact info styles */
+.contact-info {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+    .contact-details {
+        flex-direction: column; /* Stack contact info vertically on smaller screens */
+    }
+
+    .contact-info {
+        margin-left: 30px; /* Add space between icon and contact info on smaller screens */
+    }
+
 /* Contact card styles for about-icon */
 .about-icon {
     transform: scale(1);
@@ -255,8 +280,7 @@ p {
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: auto; /* Move it to the right */
-
-    
+ 
 }
 
 .about-text:hover,
@@ -264,35 +288,6 @@ p {
     transform: scale(1.1);
     transition: transform 0.5s;
 }
-
-/* Icon styles */
-ion-icon {
-    font-size: 36px;
-    margin-right: 20px;
-    color: #0074e4; /* Icon color */
-}
-
-/* Contact details styles */
-.contact-details {
-    flex: 1;
-}
-
-
-/* Contact info styles */
-.contact-info {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 5px;
-}
-
-    .contact-details {
-        flex-direction: column; /* Stack contact info vertically on smaller screens */
-    }
-
-    .contact-info {
-        margin-left: 30px; /* Add space between icon and contact info on smaller screens */
-    }
-
 
 /* Education heading styles */
 #education-heading {
@@ -322,3 +317,7 @@ span[id^="education-title"] {
     margin-left: 10px;
 }
 
+/* Add a new style for making bold text blue for experience text */
+ul li p span[style="font-weight: bold"] {
+    color: #0074e4;
+}
