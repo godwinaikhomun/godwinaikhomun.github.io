@@ -183,7 +183,7 @@ p {
 
 /* Contact card styles */
 .contact-card {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
     display: flex;
@@ -197,7 +197,7 @@ p {
 
 .contact-card:hover,
 .contact-card:focus {
-    opacity: 1;
+    opacity: 3;
     transform: translateY(0);
 }
 
