@@ -144,5 +144,26 @@
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const contactCards = document.querySelectorAll('.contact-card');
+
+        function animateContactCards() {
+          contactCards.forEach((card, index) => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+              card.style.opacity = 1;
+              card.style.transform = 'translateY(0)';
+            }
+          });
+        }
+
+        // Initially, trigger the animation for cards in view
+        animateContactCards();
+
+        // Add a scroll event listener to trigger the animation as the user scrolls
+        window.addEventListener('scroll', animateContactCards);
+      });
+    </script>
 </body>
 </html>
