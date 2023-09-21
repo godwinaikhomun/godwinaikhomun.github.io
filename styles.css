@@ -105,15 +105,9 @@ footer {
 /* Additional responsive styles */
 
 .portfolio {
-    transform: scale(1);
-    transition: transform 0.5s;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10rem;
-    padding-right: 0%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
+    
+    padding-right: 0%; 
+
 }
 
 .portfolio:hover,
@@ -125,7 +119,7 @@ footer {
 /* moves the image and name */
 .name {
     font-size: 1rem;
-    padding: 0rem 2rem;
+    padding: 0rem 4rem;
 }
 
 .portfolio img {
