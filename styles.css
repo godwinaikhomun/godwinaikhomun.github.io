@@ -92,7 +92,7 @@ footer {
 /* Additional responsive styles */
 
 .portfolio {
-    padding-right: 0%;
+    padding-right: 3%;
 }
 
 /* moves the image and name */
@@ -103,7 +103,7 @@ footer {
 
 .portfolio img {
      background: transparent;
-     padding-right: 3%;
+     padding-right: 1%;
      overflow: hidden;
 
 }
@@ -205,7 +205,7 @@ p {
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: auto; /* Move it to the right */
-    margin-right: 80px; /* Move it even further to the right */
+    margin-right: 30px; /* Move it even further to the right */
 }
 
 .about-icon:hover,
