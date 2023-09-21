@@ -76,6 +76,7 @@ main {
     border-radius: 0px;
     padding: 0px;
     margin-bottom: 5px;
+    flex-direction: row; /* Stack icons vertically */
 
 }
 
@@ -319,3 +320,4 @@ span[id^="education-title"] {
 /* Add a new style for making bold text blue for experience text */
 ul li p span[style="font-weight: bold"] {
     color: #0074e4;
+}
