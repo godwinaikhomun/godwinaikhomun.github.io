@@ -70,13 +70,13 @@ main {
 .nav-card {
     transform: scale(1);
     transition: transform 0.5s;
-    display: flex;
+    display: inline-block;
     align-items: center;
     background-color: lightblue;
     border-radius: 0px;
     padding: 0px;
     margin-bottom: 5px;
-    flex-direction: row; /* Stack icons vertically */
+    
 
 }
 
@@ -105,7 +105,7 @@ footer {
 /* Additional responsive styles */
 
 .portfolio {
-    
+
     padding-right: 0%; 
 
 }
