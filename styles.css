@@ -198,13 +198,13 @@ p {
     transform: scale(1);
     transition: transform 0.5s;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
     background-color: #fff;
     border-radius: 10px;
-    padding: 0px;
+    padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-    position: left;
+    margin-right: 20px; /* Add margin to separate from about-text */
 }
 
 .about-icon:hover,
@@ -217,13 +217,11 @@ p {
 .about-text {
     transform: scale(1);
     transition: transform 0.5s;
-    display: flex;
-    align-items: left;
     background-color: #fff;
-    border-radius: 100px;
-    padding: 100px;
+    border-radius: 10px; /* Adjust border-radius to match about-icon */
+    padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0px;
+    /* Remove flex-grow property to keep it on the left */
 }
 
 .about-text:hover,
