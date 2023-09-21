@@ -103,6 +103,12 @@ footer {
     margin-bottom: 20px;
 }
 
+.portfolio:hover,
+.portfolio:focus {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 /* moves the image and name */
 .name {
     font-size: 1rem;
