@@ -1,22 +1,26 @@
-/* Reset styles for common elements */
 body, h1, h2, h3, ul, li, p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Add box-sizing property */
 }
 
 /* Base styles for the body */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px; /* Default font size */
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Default font size */
 }
 
 /* Section styles */
 section {
     display: flex;
-    flex-direction: column; /* Changed flex direction to column */
-    align-items: center; /* Center content horizontally */
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 20px;
+}
+
+div {
+    max-width: 100%;
 }
 
 /* Header styles */
@@ -26,6 +30,9 @@ header {
     color: #0074e4;
     text-align: center;
     padding: 1rem 0;
+    display: flex;
+    justify-content: normal;
+    text-align: center;
     z-index: 100;
 }
 
@@ -33,30 +40,49 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Display nav items horizontally */
-    justify-content: center; /* Center nav items horizontally */
 }
 
 nav ul li {
-    margin-right: 1rem; /* Increase margin for nav items */
+    display: inline;
+    margin-right: 0.1px;
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: #0074e4;
+    margin-left: 1rem;
     transition: .3s;
-    font-weight: bold;
-}
+    padding-top: 0px;
+    font-weight: bold
+ }
 
 nav ul li a:hover,
 nav ul li a:active {
-    color: yellow;
+     color: yellow;
 }
 
 /* Main content styles */
 main {
     padding: 20px;
-    text-align: center; /* Center content within main */
+}
+
+.nav-card {
+    transform: scale(1);
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+
+}
+
+.nav-card:hover,
+.nav-card:focus {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 /* Footer styles */
@@ -69,7 +95,6 @@ footer {
 
 #footer-text {
     font-size: 1rem;
-    font-weight: bold; /* Add font-weight */
 }
 
 #copyright-year {
@@ -79,10 +104,12 @@ footer {
 /* Additional responsive styles */
 
 .portfolio {
+    transform: scale(1);
+    transition: transform 0.5s;
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 10rem;
     padding-right: 0%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
@@ -101,9 +128,10 @@ footer {
 }
 
 .portfolio img {
-    background: transparent;
-    padding-right: 1%;
-    overflow: hidden;
+     background: transparent;
+     padding-right: 1%;
+     overflow: hidden;
+
 }
 
 .btn-container {
@@ -126,34 +154,56 @@ footer {
 
 .btn:hover {
     box-shadow: none;
-}
+    }
+
 
 /* Adjust font sizes for headers and paragraphs for responsiveness */
-h1, h2 {
-    font-size: 1.5rem; /* Increase header font size */
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 1.2rem; /* Decrease paragraph font size */
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold
+    
+}
+
+/* Main styles for the page content */
+main {
+    padding: 20px;
 }
 
 /* Heading styles */
 h2 {
+    font-size: 24px;
     color: #0074e4; /* Heading text color */
     margin-bottom: 10px;
 }
 
 /* Icon styles */
 ion-icon {
-    font-size: 24px; /* Increase icon size */
+    font-size: 18px;
     vertical-align: middle;
     margin-right: 10px;
     color: #0074e4; /* Icon color */
 }
 
+/* Paragraph styles for phones*/
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: bold
+}
+
 /* Contact card styles */
 .contact-card {
+    transform: scale(1);
+    transition: transform 0.5s;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -169,10 +219,20 @@ ion-icon {
     transition: transform 0.5s;
 }
 
+
+
+/* Icon styles */
+ion-icon {
+    font-size: 36px;
+    margin-right: 20px;
+    color: #0074e4; /* Icon color */
+}
+
 /* Contact details styles */
 .contact-details {
     flex: 1;
 }
+
 
 /* Contact info styles */
 .contact-info {
@@ -181,16 +241,18 @@ ion-icon {
     margin-bottom: 5px;
 }
 
-.contact-details {
-    flex-direction: column; /* Stack contact info vertically on smaller screens */
-}
+    .contact-details {
+        flex-direction: column; /* Stack contact info vertically on smaller screens */
+    }
 
-.contact-info {
-    margin-left: 0; /* Remove margin on smaller screens */
-}
+    .contact-info {
+        margin-left: 30px; /* Add space between icon and contact info on smaller screens */
+    }
 
 /* Contact card styles for about-icon */
 .about-icon {
+    transform: scale(1);
+    transition: transform 0.5s;
     display: flex;
     flex-direction: column; /* Stack icons vertically */
     align-items: center; /* Center icons horizontally */
@@ -198,7 +260,8 @@ ion-icon {
     border-radius: 10px;
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 0; /* Remove margin on smaller screens */
+    margin-left: 5px; /* Move it to the right */
+    
 }
 
 .about-icon:hover,
@@ -209,11 +272,14 @@ ion-icon {
 
 /* Contact card styles for about-text */
 .about-text {
+    transform: scale(1);
+    transition: transform 0.5s;
     background-color: #fff;
     border-radius: 10px; /* Adjust border-radius to match about-icon */
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 0; /* Remove margin on smaller screens */
+    margin-left: auto; /* Move it to the right */
+ 
 }
 
 .about-text:hover,
@@ -224,7 +290,7 @@ ion-icon {
 
 /* Education heading styles */
 #education-heading {
-    font-size: 1.5rem; /* Increase education heading font size */
+    font-size: 24px;
     color: #0074e4;
     margin-bottom: 20px;
 }
@@ -241,6 +307,7 @@ li {
 
 /* Education date styles */
 span[id^="education"] {
+    
     color: black;
 }
 
@@ -252,4 +319,3 @@ span[id^="education-title"] {
 /* Add a new style for making bold text blue for experience text */
 ul li p span[style="font-weight: bold"] {
     color: #0074e4;
-}
