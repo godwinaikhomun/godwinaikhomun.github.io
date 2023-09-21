@@ -221,7 +221,7 @@ p {
     border-radius: 10px; /* Adjust border-radius to match about-icon */
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: -20px; /* Increase margin for about icon to move it more to the right */
+    margin-right: auto; /* Increase margin for about icon to move it more to the right */
 }
 
 .about-text:hover,
