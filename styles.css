@@ -183,15 +183,32 @@ p {
 
 /* Contact card styles */
 .contact-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
     display: flex;
     align-items: center;
-    background-color: #fff; /* Contact card background color */
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    
 }
+
+.contact-card:hover,
+.contact-card:focus {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-card:nth-child(odd) {
+    transition-delay: 0.2s;
+}
+
+.contact-card:nth-child(even) {
+    transition-delay: 0.4s;
+}
+
 
 /* Icon styles */
 ion-icon {
