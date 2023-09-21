@@ -62,7 +62,7 @@ nav ul li a {
     transform: scale(1);
     transition: transform 0.5s;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background-color: lightblue;
     border-radius: 0px;
     padding: 0px;
