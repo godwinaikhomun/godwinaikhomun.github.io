@@ -165,5 +165,26 @@
         window.addEventListener('scroll', animateContactCards);
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const contactCards = document.querySelectorAll('.contact-card');
+
+  function animateContactCards() {
+    contactCards.forEach((card, index) => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }
+    });
+  }
+
+  // Initially, trigger the animation for cards in view
+  animateContactCards();
+
+  // Add a touchstart event listener to trigger the animation when touched
+  document.addEventListener('touchstart', animateContactCards);
+});
+</script>
 </body>
 </html>
