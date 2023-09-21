@@ -204,7 +204,8 @@ p {
     border-radius: 10px;
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: auto; /* Move it to the right */
+    margin-left: auto; /* Move it to the right */
+    margin-right: 30px; /* Move it even further to the right */
 }
 
 .about-icon:hover,
@@ -221,7 +222,7 @@ p {
     border-radius: 10px; /* Adjust border-radius to match about-icon */
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 50; /* Allow about-text to take remaining space */
+    
 }
 
 .about-text:hover,
