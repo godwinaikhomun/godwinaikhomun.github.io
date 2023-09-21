@@ -202,7 +202,7 @@ p {
     align-items: center; /* Center icons horizontally */
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px; /* Add some padding for spacing */
+    padding: 10px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-right: auto; /* Increase margin for text to move it more to the left */
 }
