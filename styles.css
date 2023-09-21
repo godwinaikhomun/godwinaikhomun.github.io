@@ -115,8 +115,8 @@ footer {
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 10px;
-    padding-right: 50px;
+    border-radius: 0px;
+    padding-right: 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
 }
