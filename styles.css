@@ -58,6 +58,25 @@ nav ul li a {
     font-weight: bold
  }
 
+ .nav-card {
+    transform: scale(1);
+    transition: transform 0.5s;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+
+}
+
+.nav-card:hover,
+.nav-card:focus {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 /* Add a new style for making bold text blue for experience text */
 ul li p span[style="font-weight: bold"] {
     color: #0074e4;
@@ -218,6 +237,7 @@ p {
     border-radius: 10px;
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 5px; /* Move it to the right */
     
 }
 
