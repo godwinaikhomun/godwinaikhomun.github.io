@@ -47,7 +47,7 @@
         <li><span id="education11-date">05.2022</span> <span id="education11-title">(oppimispolku) Linkedin-oppiminen, eettinen hakkerointi: IoT-laitteiden                                          hakkerointisertifikaatti</span></li>
       </div>
       <div class="contact-card">
-        <li><span id="education12-date">05.2022</span> <span id="education012-title">(oppimispolku) Linkedin-oppiminen, eettinen hakkerointi: mobiililaitteiden ja alustojen                          sertifikaatti</span></li>
+        <li><span id="education12-date">05.2022</span> <span id="education12-title">(oppimispolku) Linkedin-oppiminen, eettinen hakkerointi: mobiililaitteiden ja alustojen                          sertifikaatti</span></li>
       </div>
       <div class="contact-card">
         <li><span id="education13-date">05.2022</span> <span id="education13-title">(oppimispolku) Linkedin Learning/CompTIA, eettinen hakkerointi: istunnon kaappaustodistus</span></li>
@@ -163,28 +163,10 @@
 
         // Add a scroll event listener to trigger the animation as the user scrolls
         window.addEventListener('scroll', animateContactCards);
+
+        // Add a touchstart event listener to trigger the animation when touched
+        document.addEventListener('touchstart', animateContactCards);
       });
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  const contactCards = document.querySelectorAll('.contact-card');
-
-  function animateContactCards() {
-    contactCards.forEach((card, index) => {
-      const rect = card.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 50) {
-        card.style.opacity = 1;
-        card.style.transform = 'translateY(0)';
-      }
-    });
-  }
-
-  // Initially, trigger the animation for cards in view
-  animateContactCards();
-
-  // Add a touchstart event listener to trigger the animation when touched
-  document.addEventListener('touchstart', animateContactCards);
-});
-</script>
 </body>
 </html>
