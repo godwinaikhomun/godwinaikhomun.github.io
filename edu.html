@@ -151,9 +151,9 @@
         function animateContactCards() {
           contactCards.forEach((card, index) => {
             const rect = card.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 50) {
+            if (rect.top < window.innerHeight - 30) {
               card.style.opacity = 1;
-              card.style.transform = 'translateY(0)';
+              card.style.transform = 'translateY(-10)';
             }
           });
         }
