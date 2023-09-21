@@ -181,12 +181,10 @@ p {
     font-weight: bold
 }
 
-
 /* Contact card styles */
 .contact-card {
-    opacity: 1;
-    transform: translateY(-20px);
-    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(1);
+    transition: transform 0.5s;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -198,16 +196,8 @@ p {
 
 .contact-card:hover,
 .contact-card:focus {
-    opacity: 3;
-    transform: translateY(0);
-}
-
-.contact-card:nth-child(odd) {
-    transition-delay: 0.2s;
-}
-
-.contact-card:nth-child(even) {
-    transition-delay: 0.4s;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 
