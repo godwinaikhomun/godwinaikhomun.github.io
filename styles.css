@@ -221,7 +221,7 @@ p {
     border-radius: 10px; /* Adjust border-radius to match about-icon */
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: auto; /* Allow about-text to take remaining space */
+    margin-left: 50; /* Allow about-text to take remaining space */
 }
 
 .about-text:hover,
