@@ -158,14 +158,20 @@
           });
         }
 
+        function handleTouch() {
+          animateContactCards();
+        }
+
         // Initially, trigger the animation for cards in view
         animateContactCards();
 
-        // Add a scroll event listener to trigger the animation as the user scrolls
+        // Add a scroll event listener to trigger the animation when scrolling
         window.addEventListener('scroll', animateContactCards);
 
-        // Add a touchstart event listener to trigger the animation when touched
-        document.addEventListener('touchstart', animateContactCards);
+        // Add a touch event listener to trigger the animation when touched
+        contactCards.forEach((card) => {
+          card.addEventListener('touchstart', handleTouch);
+        });
       });
     </script>
 </body>
