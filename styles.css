@@ -255,7 +255,7 @@ ion-icon {
     border-radius: 10px;
     padding: 20px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 5px; /* Move it to the right */
+    margin-right: 1ch /* Add margin to separate from about-text */
     
 }
 
