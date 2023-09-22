@@ -251,7 +251,7 @@ ion-icon {
     display: flex;
     flex-direction: column; /* Stack icons vertically */
     align-items: center; /* Center icons horizontally */
-    background-color: #fff;
+    background-color: lightblue;
     border-radius: 10px;
     padding: 15px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
