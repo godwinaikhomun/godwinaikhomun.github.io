@@ -71,5 +71,16 @@
             window.location.href = "tel:+358406641621";
         });
     </script>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+          if (e.keyCode === 123 || e.keyCode === 173) {
+            e.preventDefault();
+          }
+        });
+        </script>
 </body>
 </html>
