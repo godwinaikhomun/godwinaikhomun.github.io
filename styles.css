@@ -270,7 +270,7 @@ ion-icon {
     transition: transform 0.5s;
     background-color: #fff;
     border-radius: 10px; /* Adjust border-radius to match about-icon */
-    padding: 25px; /* Add some padding for spacing */
+    padding: 28px; /* Add some padding for spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: auto; /* Move it to the right */
  
