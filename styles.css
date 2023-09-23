@@ -105,7 +105,7 @@ footer {
 /* Additional responsive styles */
 
 .portfolio {
-
+    display: inline-block;
     padding-right: 0%; 
 
 }
