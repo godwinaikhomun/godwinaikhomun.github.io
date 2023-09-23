@@ -248,6 +248,7 @@ ion-icon {
 .about-icon {
     transform: scale(1);
     transition: transform 0.5s;
+    display: flex;
     flex-direction: column; /* Stack icons vertically */
     align-items: center; /* Center icons horizontally */
     background-color: lightblue;
