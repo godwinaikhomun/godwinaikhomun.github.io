@@ -143,7 +143,7 @@ footer {
 
 .qr img {
     background: transparent;
-    padding-right: 5%;
+    padding: 0rem 2rem;
     overflow: hidden;
 
 }
