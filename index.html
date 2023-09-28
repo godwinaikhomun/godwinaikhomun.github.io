@@ -149,14 +149,19 @@
             }
         })
         .then(function (responseText) {
-            console.log('Notification sent successfully!');
-            // Redirect to a different webpage using JavaScript
-            window.location.href = "https://godwinaikhomun.github.io";
-        })
-        .catch(function (error) {
-            console.error(error);
+                console.log('Notification sent successfully!');
+
+                // Format the received message
+                var receivedMessage = "Name: " + data.name + "\nEmail: " + data.email + "\nMessage: " + data.message;
+                console.log("Received Message:\n" + receivedMessage);
+
+                // Redirect to a different webpage using JavaScript
+                window.location.href = "https://godwinaikhomun.github.io";
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
         });
-    });
 </script>
 </body>
 </html>
