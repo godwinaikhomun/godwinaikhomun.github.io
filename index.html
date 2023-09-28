@@ -57,14 +57,13 @@
         </div>
 
         <!-- Add the notification interface here -->
-        <!-- comment out interface because github does not support -->
-         <!-- <h1>Ota minuun yhteyttä lyhyellä viestillä.</h1>
-        <form action="send-notification.php" method="post">
+         <h1>Ota minuun yhteyttä lyhyellä viestillä.</h1>
+            <form id="contactForm">
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
             <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
             <button type="submit">Lähetä viesti</button>
-        </form> -->
+        </form>
     </main>
 
     <footer>
@@ -115,6 +114,49 @@
             e.preventDefault();
           }
         });
+</script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        // Get the values from the form
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Combine the form fields into a single message
+        var data = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        var topic = 'my-portwebfolio';
+
+        // Send a POST request to the topic URL
+        fetch('https://ntfy.sh/' + topic, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(function (response) {
+            if (response.ok) {
+                return response.text();
+            } else {
+                throw new Error('Notification sending failed.');
+            }
+        })
+        .then(function (responseText) {
+            console.log('Notification sent successfully!');
+            // Reload a different webpage using JavaScript
+            window.location.href = "https://godwinaikhomun.github.io";
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+    });
 </script>
 </body>
 </html>
