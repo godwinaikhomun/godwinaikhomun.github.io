@@ -125,7 +125,7 @@
         var message = document.querySelector('textarea[name="message"]').value;
 
         // Format the message
-        var formattedMessage = "Name: " + name + "<br>Email: " + email + "<br>Message: " + message;
+        var formattedMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
 
         var topic = 'my-portwebfolio';
 
@@ -134,7 +134,7 @@
             method: 'POST',
             body: JSON.stringify(formattedMessage),
             headers: {
-                'Content-Type': 'text/html'
+                'Content-Type': 'text/plain'
             }
         })
         .then(function (response) {
