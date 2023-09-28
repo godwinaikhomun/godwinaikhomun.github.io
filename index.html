@@ -62,7 +62,7 @@
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
             <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
-            <button type="submit">Lähetä viesti</button>
+            <button type="button" id="submitButton">Lähetä viesti</button>
         </form>
     </main>
 
@@ -116,7 +116,7 @@
         });
 </script>
 <script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
+    document.getElementById('submitButton').addEventListener('click', function (event) {
         event.preventDefault();
         
         // Get the values from the form
