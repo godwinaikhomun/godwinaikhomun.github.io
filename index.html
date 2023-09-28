@@ -58,11 +58,11 @@
 
         <!-- Add the notification interface here -->
          <h1>Ota minuun yhteyttä lyhyellä viestillä.</h1>
-         <form action=" " method="">
+         <form>
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
             <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
-            <button type="submit">Lähetä viesti</button>
+            <input type="submit">Lähetä viesti</button>
         </form> 
     </main>
 
@@ -116,13 +116,13 @@
         });
 </script>
 <script>
-    document.getElementById('submitButton').addEventListener('click', function (event) {
+    document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault();
         
         // Get the values from the form
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
+        var name = document.querySelector('input[name="name"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var message = document.querySelector('textarea[name="message"]').value;
 
         // Combine the form fields into a single message
         var data = {
@@ -150,7 +150,7 @@
         })
         .then(function (responseText) {
             console.log('Notification sent successfully!');
-            // Reload a different webpage using JavaScript
+            // Redirect to a different webpage using JavaScript
             window.location.href = "https://godwinaikhomun.github.io";
         })
         .catch(function (error) {
