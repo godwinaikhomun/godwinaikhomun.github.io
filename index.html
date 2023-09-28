@@ -124,19 +124,15 @@
         var email = document.querySelector('input[name="email"]').value;
         var message = document.querySelector('textarea[name="message"]').value;
 
-        // Combine the form fields into a single message
-        var data = {
-            Name: name,
-            Email: email,
-            Message: message
-        };
+        // Format the message
+        var formattedMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
 
         var topic = 'my-portwebfolio';
 
         // Send a POST request to the topic URL
         fetch('https://ntfy.sh/' + topic, {
             method: 'POST',
-            body: JSON.stringify(data),
+            body: JSON.stringify(formattedMessage),
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -149,19 +145,15 @@
             }
         })
         .then(function (responseText) {
-                console.log('Notification sent successfully!');
+            console.log('Notification sent successfully!');
 
-                // Format the received message
-                var receivedMessage = "Name: " + data.name + "\nEmail: " + data.email + "\nMessage: " + data.message;
-                console.log("Received Message:\n" + receivedMessage);
-
-                // Redirect to a different webpage using JavaScript
-                window.location.href = "https://godwinaikhomun.github.io";
-            })
-            .catch(function (error) {
-                console.error(error);
-            });
+            // Redirect to a different webpage using JavaScript
+            window.location.href = "https://godwinaikhomun.github.io";
+        })
+        .catch(function (error) {
+            console.error(error);
         });
+    });
 </script>
 </body>
 </html>
