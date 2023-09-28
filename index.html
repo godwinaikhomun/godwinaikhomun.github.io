@@ -55,6 +55,16 @@
         <div id="iframe-container">
             <iframe src="about.html" width="100%" height="870px" frameborder="0" id="contentFrame" name="contentFrame" title="About Me" overflow="auto"></iframe>
         </div>
+
+        <!-- Add the notification interface here -->
+        
+        <h1>Ota minuun yhteyttä lyhyellä viestillä.</h1>
+        <form action="send-notification.php" method="post">
+            <input type="text" name="name" placeholder="Sinun nimesi" required>
+            <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
+            <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
+            <button type="submit">Lähetä viesti</button>
+        </form>
     </main>
 
     <footer>
