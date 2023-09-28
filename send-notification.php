@@ -24,7 +24,7 @@ if (curl_errno($ch)) {
 curl_close($ch);
 
 // Reload a different webpage using JavaScript
-echo '<script type="text/javascript">window.location.href = "https://godwinaikhomun.rf.gd";</script>';
+echo '<script type="text/javascript">window.location.href = "https://godwinaikhomun.github.io";</script>';
 
 exit(); // Ensure that no further code is executed after the redirect
 
