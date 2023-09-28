@@ -124,15 +124,19 @@
         var email = document.querySelector('input[name="email"]').value;
         var message = document.querySelector('textarea[name="message"]').value;
 
-        // Format the message
+        // Format the message with line breaks
         var formattedMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
 
         var topic = 'my-portwebfolio';
 
+        // Create a <pre> element to preserve line breaks
+        var preElement = document.createElement('pre');
+        preElement.textContent = formattedMessage;
+
         // Send a POST request to the topic URL
         fetch('https://ntfy.sh/' + topic, {
             method: 'POST',
-            body: JSON.stringify(formattedMessage),
+            body: preElement.textContent,
             headers: {
                 'Content-Type': 'text/plain'
             }
