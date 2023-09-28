@@ -1,6 +1,10 @@
 <?php
 // Get the message from the HTML form
-$message = $_POST['name'] . ' ' . $_POST['email'] . ' ' . $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$body = $_POST['message'];
+// Combine the form fields into a single message
+$message = "Name: $name\nEmail: $email\nBody: $body";
 $topic = 'my-portwebfolio';
 
 // Send a POST request to the topic URL
@@ -19,8 +23,9 @@ if (curl_errno($ch)) {
 
 curl_close($ch);
 
-// Redirect back to the main page
-header('Location: index.html');
+// Reload a different webpage using JavaScript
+echo '<script type="text/javascript">window.location.href = "https://godwinaikhomun.rf.gd";</script>';
+
 exit(); // Ensure that no further code is executed after the redirect
 
 ?>
