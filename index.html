@@ -63,7 +63,7 @@
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
             <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
-             <div class="cf-turnstile" data-sitekey="0x4AAAAAAAK3RNXuQyyB4x5g" data-callback="javascriptCallback"></div>
+             <div class="#example-container" data-sitekey="0x4AAAAAAAK3RNXuQyyB4x5g" data-callback="javascriptCallback"></div>
             <button type="submit">Lähetä viesti</button>
         </form> 
     </main>
@@ -161,5 +161,15 @@
         });
     });
 </script>
+    <script>
+        window.onloadTurnstileCallback = function () {
+    turnstile.render('#example-container', {
+        sitekey: '0x4AAAAAAAK3RNXuQyyB4x5g',
+        callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+        },
+    });
+};
+    </script>
 </body>
 </html>
