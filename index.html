@@ -13,6 +13,7 @@
 
   gtag('config', 'G-DDM2E2KBX2');
 </script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback" defer></script>
 </head>
 <body>
     <header>
@@ -62,6 +63,7 @@
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
             <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
+             <div class="cf-turnstile" data-sitekey="0x4AAAAAAAK3RNXuQyyB4x5g" data-callback="javascriptCallback"></div>
             <button type="submit">Lähetä viesti</button>
         </form> 
     </main>
