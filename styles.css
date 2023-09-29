@@ -129,6 +129,24 @@ footer {
 
 }
 
+/* Define the heartbeat animation */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the .portfolio element */
+.portfolio {
+  animation: heartbeat 3s infinite; /* Adjust the duration (3s) as needed */
+}
+
 .qr {
     display: inline-block;
     padding-right: 0%; 
