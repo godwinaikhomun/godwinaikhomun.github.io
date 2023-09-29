@@ -144,7 +144,7 @@ footer {
 
 /* Apply the animation to the .portfolio element */
 .portfolio {
-  animation: heartbeat 3s infinite; /* Adjust the duration (3s) as needed */
+  animation: heartbeat 4s infinite; /* Adjust the duration (3s) as needed */
 }
 
 .qr {
