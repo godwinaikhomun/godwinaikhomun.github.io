@@ -62,8 +62,8 @@
          <form>
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
-            <textarea name="message" placeholder="Viestisi" rows="4" oninput="countCharacters()" maxlength="320" required></textarea>
-             <span id="characterCount">0 / 320 characters</span>
+            <textarea name="message" placeholder="Viestisi" rows="4" oninput="countCharacters()" maxlength="120" required></textarea>
+             <span id="characterCount">0 / 120 characters</span>
              <div class="#example-container" data-sitekey="0x4AAAAAAAK3RNXuQyyB4x5g" data-callback="javascriptCallback"></div>
             <button type="submit">Lähetä viesti</button>
         </form> 
@@ -182,16 +182,16 @@
             var messageLength = messageValue.length;
             var characterCountElement = document.getElementById('characterCount');
             
-            // Check if message length exceeds 320 characters
-            if (messageLength > 320) {
-                message.value = messageValue.substring(0, 320); // Truncate the message
+            // Check if message length exceeds 120 characters
+            if (messageLength > 120) {
+                message.value = messageValue.substring(0, 120); // Truncate the message
                 characterCountElement.style.color = 'red';
             } else {
                 characterCountElement.style.color = 'black';
             }
             
-            characterCountElement.textContent = messageLength + ' / 320 characters';
+            characterCountElement.textContent = messageLength + ' / 120 characters';
         }
-</script>
+    </script>
 </body>
 </html>
