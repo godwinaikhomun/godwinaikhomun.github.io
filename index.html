@@ -62,7 +62,8 @@
          <form>
             <input type="text" name="name" placeholder="Sinun nimesi" required>
             <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
-            <textarea name="message" placeholder="Viestisi" rows="4" required></textarea>
+            <textarea name="message" placeholder="Viestisi" rows="4" oninput="countCharacters()" maxlength="320" required></textarea>
+             <span id="characterCount">0 / 320 characters</span>
              <div class="#example-container" data-sitekey="0x4AAAAAAAK3RNXuQyyB4x5g" data-callback="javascriptCallback"></div>
             <button type="submit">Lähetä viesti</button>
         </form> 
@@ -174,5 +175,23 @@
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f6c8ad1d0bfc455a93540914f1f2cd79"}'>
 </script><!-- End Cloudflare Web Analytics -->
+<script>
+        function countCharacters() {
+            var message = document.querySelector('textarea[name="message"]');
+            var messageValue = message.value;
+            var messageLength = messageValue.length;
+            var characterCountElement = document.getElementById('characterCount');
+            
+            // Check if message length exceeds 320 characters
+            if (messageLength > 320) {
+                message.value = messageValue.substring(0, 320); // Truncate the message
+                characterCountElement.style.color = 'red';
+            } else {
+                characterCountElement.style.color = 'black';
+            }
+            
+            characterCountElement.textContent = messageLength + ' / 320 characters';
+        }
+</script>
 </body>
 </html>
