@@ -154,8 +154,18 @@
         .then(function (responseText) {
             console.log('Onnistui! Odota, että sinut ohjataan takaisin kotisivulle.');
 
-            // Redirect to a different webpage using JavaScript
-            window.location.href = "https://godwinaikhomun.github.io";
+            // Display the message for 5 seconds
+            var notification = document.createElement('div');
+            notification.textContent = 'Notification sent successfully!';
+            document.body.appendChild(notification);
+
+            // Set a timer to remove the notification and redirect
+            setTimeout(function () {
+                notification.remove();
+
+               // Redirect to a different webpage using JavaScript
+               window.location.href = "https://godwinaikhomun.github.io";
+            }, 5000); // 5000 milliseconds (5 seconds)
         })
         .catch(function (error) {
             console.error(error);
