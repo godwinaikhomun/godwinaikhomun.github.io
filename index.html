@@ -153,18 +153,15 @@
         })
         .then(function (responseText) {
         // Display a notification using an alert
-        alert('Onnistui! Napsauta OK, jos haluat palata kotisivulle.');
+        alert('Onnistui! Napsauta OK palatakses etusivulle.');
 
-        // Set a timer to redirect after 5 seconds
-        setTimeout(function () {
-            // Redirect to a different webpage using JavaScript
+        // Redirect to a different webpage using JavaScript
             window.location.href = "https://godwinaikhomun.github.io";
-        }, 5000); // 1000 milliseconds (1 seconds)
-    })
-    .catch(function (error) {
-        console.error(error);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
     });
-});
 </script>
     <script>
         window.onloadTurnstileCallback = function () {
